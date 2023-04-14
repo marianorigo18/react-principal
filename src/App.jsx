@@ -8,7 +8,7 @@ const App = () => {
             formatUser={formatUserName} 
             name={"rodrigo"} 
             userName={"rodrigo@gmail.com"} 
-            isFollow>
+>
                 hello
             </Titulo> 
 
@@ -16,15 +16,15 @@ const App = () => {
             formatUser={formatUserName} 
             name={"pablo"} 
             userName={"pablo@gmail.com"} 
-            isFollow={false}>
+>
                 HELO
             </Titulo>
-            
+
             <Titulo 
             formatUser={formatUserName} 
             name={"gabriel"} 
             userName={"gabriel@gmail.com"} 
-            isFollow>
+>
                 REE
             </Titulo>
         </>
