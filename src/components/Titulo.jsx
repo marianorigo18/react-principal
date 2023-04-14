@@ -1,6 +1,16 @@
-const Titulo = ({titulo}) => {
+const Titulo = ({name, userName, isFollow, formatUser, children}) => {
+    const imgT = `https://unavatar.io/${name}`
     return(
-        <h1>{titulo}</h1>
+        <article>
+        <header>
+            <img alt="avatar" src={imgT}/>
+            <div>
+                <strong>{children}</strong>
+                <span>{formatUser(userName)}</span>
+            </div>
+        </header>
+        <button>seguir</button>
+    </article>
     )
 }
 export default Titulo 
