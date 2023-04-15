@@ -1,7 +1,9 @@
 import "./App.css"
 import Titulo from "./components/Titulo"
+import ButtonConsole from "./components/ButtonConsole"
 const App = () => {
     const formatUserName = (userName) => `@${userName}`
+    const funcSole = () => console.log('hello world')
     return(
         <>
             <Titulo 
@@ -27,6 +29,7 @@ const App = () => {
 >
                 REE
             </Titulo>
+            <ButtonConsole func={funcSole}/>
         </>
         )
 }
